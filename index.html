@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="assets/img/logo/logo.png" type="image/x-icon" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <title>photoschool</title>
+</head>
+
+<body>
+  <div class="popup is-hidden" id="popup" data-modal>
+    <div class="popup__body">
+      <div class="popup__content">
+        <h1 class="popup__title">ФОТОГРАФІЯ - ЦЕ Я</h1>
+
+        <ul class="popup__text">
+          <p>ПРОГРАМА КУРСУ:</p>
+
+          <li>
+            <p>- ТРИВАЛІСТЬ 2 МІСЯЦІ -</p>
+          </li>
+          <li>
+            <p>- 8 ТЕОРЕТИЧНИХ ЗАНЯТЬ -</p>
+          </li>
+          <li>
+            <p>- 12 ПРАКТИЧНИХ ЗАНЯТЬ -</p>
+          </li>
+        </ul>
+
+        <ul class="popup__text">
+          <p>РЕЗУЛЬТАТ:</p>
+
+          <li>
+            <p>- ПРАКТИЧНІ НАВИЧКИ -</p>
+          </li>
+          <li>
+            <p>- ПРОФЕСІЙНЕ КОМ'ЮНІТІ -</p>
+          </li>
+          <li>
+            <p>- ПІДТРИМКА ТА ПОРАДИ -</p>
+          </li>
+          <li>
+            <p>- ПОРТФОЛІО -</p>
+          </li>
+          <li>
+            <p>- ДИПЛОМ -</p>
+          </li>
+        </ul>
+
+        <div class="popup__btn">
+          <button href="" class="button" id="open-modal" data-modal-close>
+            ЗРОЗУМІЛО
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="assets/img/logo/logo_2.png" alt="" style="width: 50px; height: 50px" />
+        ВЯЧЕСЛАВ ЗБІНСЬКИЙ
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#courses" class="nav__link">КУРСИ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#callery" class="nav__link">ГАЛЕРЕЯ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#awards" class="nav__link">НАГОРОДИ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">КОНТАКТИ</a>
+          </li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__btns">
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="home hero" id="home">
+      <div class="home__container container grid">
+        <img src="assets/img/main/main.jpeg" alt="" class="home__img" />
+
+        <div class="home__data">
+          <h1 class="home__title">ФОТОГРАФІЯ - ЦЕ Я</h1>
+          <p class="home__description">ФОТОКУРС</p>
+          <a href="#courses" class="button button--flex">
+            ДІЗНАТИСЯ ПРО КУРС
+            <i class="ri-arrow-right-down-line button__icon"></i>
+          </a>
+        </div>
+
+        <div class="home__social">
+          <span class="home__social-follow">Follow Us</span>
+
+          <div class="home__social-links">
+            <a href="https://www.instagram.com/photoschool_if_ua/" target="_blank" class="home__social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/photoschool.if.ua/" target="_blank" class="home__social-link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <!-- <a href="https://www.tiktok.com/" target="_blank" class="home__social-link">
+              <i class="fab fa-tiktok"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions section" id="about">
+      <div class="about__container grid container">
+        <img src="assets/img/owner/owner.jpeg" alt="" class="about__img" />
+
+        <div class="about__data">
+          <h2 class="section__title about__title">ФОТОГРАФІЯ -</h2>
+
+          <p class="about__description">
+            ЦЕ СТИЛЬ ЖИТТЯ, ЕМОЦІЇ, НЕЗАБУТНІ МОМЕНТИ, ТВОРЧІ ЗАДУМИ, БАЧЕННЯ
+            ПРЕКРАСНОГО. ТАКОЮ ЇЇ БАЧУ Я.
+          </p>
+
+          <a href="#awards" class="button button--flex">
+            НАГОРОДИ <i class="ri-arrow-right-down-line button__icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses section container" id="courses">
+      <h2 class="section__title-center">НАШІ КУРСИ</h2>
+
+      <div class="courses__container grid container">
+        <img src="assets/img/cours/cours_01.jpeg" alt="" class="courses__img" />
+
+        <button href="#modal" class="button courses__btn" id="open-modal" data-modal-open>
+          ПРО КУРС
+        </button>
+      </div>
+    </section>
+
+    <section class="questions section" id="faqs">
+      <h2 class="section__title-center questions__title container">
+        ВІДПОВІДІ НА ТВОЇ ЗАПИТАННЯ
+      </h2>
+
+      <div class="questions__container container grid">
+        <!-- 1 -->
+        <div class="questions__group">
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">Я маю фотоапарат, але не маю досвіду?</h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                Курс підійде навіть початківцям. Оскільки ми навчаємо від азів, даючи базову теорію та практику.
+
+              </p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">Я не маю фотоапарат, але хочу навчатися?</h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                Фотоапарат для навчання потрібен. А в теперішній час фототехніку можна взяти в оренду на плейс-маркетах.
+              </p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">Який саме фотоапарат потрібен?</h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                Для проходження курсу потрібен дзеркальний чи бездзеркальний фотоапарат,
+                який має можливість ручного налаштування зйомки та зміни оптики.
+              </p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">Які навички я отримаю на курсі?</h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                Ви зрозумієте базові принципи роботи фотоапарату. Налаштування фотоапарату для різних видів зйомки.
+                Отримаєте знання в галузі композиції, кольоровознавства, позування, роботи з різними джерелами світла,
+                вміння працювати з об'єктом зйомки і т. д.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="questions__group">
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Як проходить навчання?</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Теорія. <br>
+                  Практика. <br>
+                  Домашні завдання.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Де проходить навчання?</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Теорія проходить в аудиторії. <br>
+                  Практика включає в себе заняття на природі, в студії, також є виїздні практичні заняття. <br>
+                  Домашні завдання згідно умов завдання.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Чи навчаємо роботі у редакторах Photoshop та Lightroom?</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  При проходженні курсу у вас є можливість ознайомитися з основними принципами роботи в цих програмах.
+                  Кожен студент отримує можливість встановлення цих програм для роботи.
+                  Але поглиблені знання потребують окремого курсу.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Чи отримаю я документ про проходження курсу?</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Після успішного проходження курсу ви отримаєте сертифікат. А, найбільш успішні студенти - з відзнакою
+                  та подальшою підтримкою фотошколи.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <section class="gallery section" id="callery">
+      <h2 class="section__title-center">ГАЛЕРЕЯ</h2>
+
+      <div class="swiper slider slider_main">
+        <div class="swiper-wrapper slider__wrapper">
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_01.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_02.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_03.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_04.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_05.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_06.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_07.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_08.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_09.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_10.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_11.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_12.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_13.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_14.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_15.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_16.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_17.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_18.jpeg);
+                "></div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" style="
+                  background-image: url(assets/img/gallery/gallery_19.jpeg);
+                "></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="questions section" id="portfolio">
+      <h2 class="section__title-center container">ПОРТФОЛІО</h2>
+
+      <div class="portfolio__container grid">
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_1.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_2.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_3.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_4.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_5.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_6.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+        
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_7.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+        
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+        
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_8.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+        
+        <article class="portfolio__card">
+          <div class="portfolio__circle"></div>
+        
+          <a href="#" target="blank">
+            <img src="assets/img/portfolio/portfolio_9.jpeg" alt="" class="portfolio__img" />
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="awards">
+      <h2 class="section__title-center">НАГОРОДИ</h2>
+
+      <div class="awards swiper mySwiper">
+        <div class="awards__list swiper-wrapper">
+          <div class="awards__item swiper-slide">
+            <img src="assets/img/awards/award_1.jpeg" alt="picture" srcset="" />
+          </div>
+
+          <div class="awards__item swiper-slide">
+            <img src="assets/img/awards/award_2.jpeg" alt="picture" srcset="" />
+          </div>
+
+          <div class="awards__item swiper-slide">
+            <img src="assets/img/awards/award_3.jpeg" alt="picture" srcset="" />
+          </div>
+
+          <div class="awards__item swiper-slide">
+            <img src="assets/img/awards/award_4.jpeg" alt="picture" srcset="" />
+          </div>
+
+          <div class="awards__item swiper-slide">
+            <img src="assets/img/awards//award_5.jpeg" alt="picture" srcset="" />
+          </div>
+
+          <div class="awards__item swiper-slide">
+            <img src="assets/img/awards/award_6.jpeg" alt="picture" srcset="" />
+          </div>
+
+          <div class="awards__item swiper-slide">
+            <img src="assets/img/awards/award_7.jpeg" alt="picture" srcset="" />
+          </div>
+
+          <div class="awards__item swiper-slide">
+            <img src="assets/img/awards/award_8.jpeg" alt="picture" srcset="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions section" id="contact">
+      <div class="contact__container grid container">
+        <div class="contact__box">
+          <h2 class="section__title">НАШІ КОНТАКТИ</h2>
+
+          <div class="contact__data">
+            <div class="contact__information">
+              <h3 class="contact__subtitle">ВЯЧЕСЛАВ</h3>
+              <span class="contact__description">
+                <i class="ri-phone-line contact__icon"></i>
+                +38 050 765 25 89
+              </span>
+              <br>
+              <span class="contact__description">
+                <i class="ri-phone-line contact__icon"></i>
+                +38 067 765 25 89
+              </span>
+            </div>
+
+            <div class="contact__information">
+              <h3 class="contact__subtitle">АДМІНІСТРАТОР</h3>
+              <span class="contact__description">
+                <i class="ri-phone-line contact__icon"></i>
+                +38 098 168 11 88
+              </span>
+            </div>
+
+            <div class="contact__information">
+              <h3 class="contact__subtitle">E-mail</h3>
+              <span class="contact__description">
+                <i class="ri-mail-line contact__icon"></i>
+                photoschool.if@gmail.com
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <form action="send_mail.php" id="form" name="form" class="contact__form" method="POST">
+          <div class="contact__inputs">
+            <div class="contact__content">
+              <input id="name" type="name" name="name" autocomplete="off" placeholder=" " class="contact__input"
+                data-reg="^[А-ЯЁійї][а-яёійї]*$" />
+              <label for="formName" class="contact__label">* Віктор</label>
+            </div>
+
+            <div class="contact__content">
+              <input id="phone" type="tel" name="phone" autocomplete="off" placeholder=" " class="contact__input"
+                data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$" />
+              <label for="formTel" class="contact__label">* +380123456789</label>
+            </div>
+
+            <div class="contact__content">
+              <input id="email" type="email" name="email" autocomplete="off" placeholder=" " class="contact__input"
+                data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
+              <label for="formEmail" class="contact__label">* gmail@gmail.com</label>
+            </div>
+
+            <div class="contact__content contact__area">
+              <textarea id="message" type="text" name="message" autocomplete="off" placeholder=" " class="contact__input"
+                data-reg=""></textarea>
+              <label for="formMessage" class="contact__label">Повідомлення</label>
+            </div>
+          </div>
+
+          <button type="submit" id="button" class="button button--flex">
+            НАДІСЛАТИ
+            <i class="ri-arrow-right-up-line button__icon"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <a href="#" class="nav__logo">
+          <img src="assets/img/logo/logo_2.png" alt="" style="width: 60px; height: 60px" />
+          ZBINSKY
+        </a>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">АДРЕСА</h3>
+
+        <ul class="footer__data">
+          <li class="footer__information">УКРАЇНА</li>
+          <li class="footer__information">ІВАНО-ФРАНКІВСЬК</li>
+
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">КОНТАКТИ</h3>
+
+        <ul class="footer__data">
+          <li class="footer__information">+38 050 765 25 89</li>
+          <li class="footer__information">+38 067 765 25 89</li>
+          <li class="footer__information">+38 098 168 11 88</li>
+
+          <div class="footer__social">
+            <a href="https://www.instagram.com/photoschool_if_ua/" target="_blank" class="footer__social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/photoschool.if.ua/" target="_blank" class="footer__social-link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <!-- <a href="https://www.tiktok.com/" target="_blank" class="footer__social-link">
+              <i class="fab fa-tiktok"></i>
+            </a> -->
+          </div>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">ОПЛАТА</h3>
+
+        <div class="footer__cards">
+          <img src="assets/img/payment/card1.png" alt="" class="footer__card" />
+          <img src="assets/img/payment/card2.png" alt="" class="footer__card" />
+          <img src="assets/img/payment/cash.jpeg" alt="" class="footer__card" />
+        </div>
+      </div>
+    </div>
+    <p class="footer__copy">TVIDO</p>
+  </footer>
+
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-fill scrollup__icon"></i>
+  </a>
+
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/ac72aedf2c.js" crossorigin="anonymous"></script>
+
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 25,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+      loop: true,
+    });
+  </script>
+
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
+</body>
+
+</html>
